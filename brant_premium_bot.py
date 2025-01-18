@@ -8,13 +8,6 @@ if BOT_TOKEN:
 else:
     raise ValueError("No BOT_TOKEN found in environment variables.")
 
-
-# Get the bot token from the environment variable
-BOT_TOKEN = os.getenv("7524142710:AAEA9Y7RL_BqxeCJmDeFxMThaQ4U9-CfW_U")
-
-if not BOT_TOKEN:
-    raise ValueError("No BOT_TOKEN found in environment variables.")
-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 
