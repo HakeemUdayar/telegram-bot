@@ -1,5 +1,14 @@
 import os
 
+# Get the bot token from environment variables
+BOT_TOKEN = os.getenv("7524142710:AAEA9Y7RL_BqxeCJmDeFxMThaQ4U9-CfW_U")
+
+if BOT_TOKEN:
+    print("BOT_TOKEN successfully loaded.")
+else:
+    raise ValueError("No BOT_TOKEN found in environment variables.")
+
+
 # Get the bot token from the environment variable
 BOT_TOKEN = os.getenv("7524142710:AAEA9Y7RL_BqxeCJmDeFxMThaQ4U9-CfW_U")
 
